@@ -22,7 +22,7 @@ def main():
         if 30 <= user_age <= 39:
             st.write("You are **young** :boy: in RCM!")
             st.balloons()
-        if 40 <= user_age <= 50:
+        if 40 <= user_age <= 60:
             st.write("You are an **adult** :man: in RCM!")
             st.balloons()
         
