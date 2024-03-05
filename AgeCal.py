@@ -15,12 +15,16 @@ def main():
     if user_birth_date:
         user_age = calculate_age(user_birth_date)
         st.write(f"You are approximately **{user_age} years old**.")
-        if 20 <= user_age <= 30:
+        st.balloons()
+        if 20 <= user_age <= 29:
             st.write("You are a **baby** :baby: in RCM!")
-        if 30 <= user_age <= 40:
+            st.balloons()
+        if 30 <= user_age <= 39:
             st.write("You are **young** :boy: in RCM!")
+            st.balloons()
         if 40 <= user_age <= 50:
             st.write("You are an **adult** :man: in RCM!")
+            st.balloons()
         
 
 if __name__ == "__main__":
