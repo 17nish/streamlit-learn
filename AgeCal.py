@@ -10,7 +10,7 @@ def calculate_age(birth_date):
     return age
 
 def main():
-    st.title("Age Calculator")
+    st.title("RCM Age Calculator")
     user_birth_date = st.date_input("Enter your date of birth:", min_value=date(1900, 1, 1))
     if user_birth_date:
         user_age = calculate_age(user_birth_date)
