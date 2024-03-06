@@ -64,7 +64,7 @@ def main():
              difference_age =abs(difference_age)
              st.write(f"Your **{abs(difference_age)}** years older than Average Norwegian age.")
         else:
-         st.write(f"Your **{difference_age}** you age is same as Average Norwegian age.")
+         st.write(f"Your age is same as Average Norwegian age.")
             
         st.balloons()
         
