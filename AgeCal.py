@@ -8,6 +8,9 @@ def calculate_age(birth_date):
     if not full_year_passed:
         age -= 1
     return age
+
+   
+
 def get_zodiac_sign(birth_date):
     # Predefined list of zodiac signs and date ranges
     zodiac_signs = [
@@ -38,8 +41,10 @@ def main():
     if user_birth_date:
         user_age = calculate_age(user_birth_date)
         zodiac_sign = get_zodiac_sign(user_birth_date)
+       
         st.write(f"You are approximately **{user_age} years old**.")
         st.write(f"Your zodiac sign is **{zodiac_sign}**.")
+    
         st.balloons()
         if 20 <= user_age <= 29:
             st.write("You are a **baby** :baby: in RCM!")
@@ -51,8 +56,17 @@ def main():
             st.balloons()
         if 40 <= user_age <= 50:
             st.write("You are an **adult** :man: in RCM!")
-           
-            st.balloons()
+        difference_age = 39-user_age         # calculating diffrence beetween the age.
+       
+        if difference_age > 0:
+          st.write(f"Your **{difference_age}** years younger than Average Norwegian age.")
+        elif difference_age < 0:
+             difference_age =abs(difference_age)
+             st.write(f"Your **{abs(difference_age)}** years older than Average Norwegian age.")
+        else:
+         st.write(f"Your **{difference_age}** you age is same as Average Norwegian age.")
+            
+        st.balloons()
         
 
 if __name__ == "__main__":
